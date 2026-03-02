@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>360&deg; Image Gallery</title>
     <meta name="description" content="360&deg; Image Gallery - A-Frame" />
-      <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
     <script src="https://unpkg.com/aframe-layout-component@5.x.x/dist/aframe-layout-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
@@ -27,6 +27,7 @@
   <body>
     <a-scene>
       <a-assets>
+        <!-- CITY -->
         <img
           id="city"
           crossorigin="anonymous"
@@ -37,30 +38,43 @@
           crossorigin="anonymous"
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg"
         />
-        <img
-          id="cubes-thumb"
-          crossorigin="anonymous"
-          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg"
-        />
-        <img
-          id="sechelt-thumb"
-          crossorigin="anonymous"
-          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg"
-        />
-        <audio
-          id="click-sound"
-          crossorigin="anonymous"
-          src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"
-        ></audio>
+
+        <!-- CUBES -->
         <img
           id="cubes"
           crossorigin="anonymous"
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg"
         />
         <img
+          id="cubes-thumb"
+          crossorigin="anonymous"
+          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg"
+        />
+
+        <!-- SECHELT -->
+        <img
           id="sechelt"
           crossorigin="anonymous"
           src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"
+        />
+        <img
+          id="sechelt-thumb"
+          crossorigin="anonymous"
+          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg"
+        />
+
+        <audio
+          id="click-sound"
+          crossorigin="anonymous"
+          src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"
+        ></audio>
+
+
+        <!-- TES GAMBAR -->
+        <img
+          id="tes-gambar"
+          crossorigin="anonymous"
+          src="https://awsimages.detik.net.id/community/media/visual/2026/02/23/menteri-esdm-bahlil-lahadalia-1771791192528_169.jpeg?w=600&q=90"
         />
       </a-assets>
 
@@ -79,20 +93,29 @@
         layout="type: line; margin: 1.5"
         position="-1.5 -1 -4"
       >
+      <!-- KOTA -->
         <a-entity
           template="src: #link"
           data-src="#city"
           data-thumb="#city-thumb"
         ></a-entity>
+        <!-- KUBUS -->
         <a-entity
           template="src: #link"
           data-src="#cubes"
           data-thumb="#cubes-thumb"
         ></a-entity>
+        <!-- PANTAI / RAWA / APA MBUH -->
         <a-entity
           template="src: #link"
           data-src="#sechelt"
           data-thumb="#sechelt-thumb"
+        ></a-entity>
+        <!-- LORD BAHLIL -->
+        <a-entity
+          template="src: #link"
+          data-src="#tes-gambar"
+          data-thumb="#tes-gambar-thumb"
         ></a-entity>
       </a-entity>
 
