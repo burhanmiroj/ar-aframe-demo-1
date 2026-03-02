@@ -83,7 +83,12 @@
           crossorigin="anonymous"
           src="https://media.gettyimages.com/id/102270269/vector/world-map-continent-and-country-labels.jpg?s=1024x1024&w=gi&k=20&c=aFyh9vr8uJtd4lLHRn1Cb4Rr_-rjcKKbAr-rCPvGahY="
         />
-      </a-assets>
+
+        <!-- HCM -->
+        <img
+          id="hcm"
+          crossorigin="anonymous"
+          src="https://drive.google.com/file/d/1KaK32yTYopk7ytsQX0UKqQpdJiJ1Dc2t/view?usp=sharing" />
 
       <!-- 360-degree image. -->
       <a-sky
@@ -128,7 +133,13 @@
         <a-entity
           template="src: #link"
           data-src="#globe"
-          data-thumb="#globe-thumb"
+          data-thumb="#globe"
+        ></a-entity>
+        <!-- HCM -->
+        <a-entity
+          template="src: #link"
+          data-src="#hcm"
+          data-thumb="#hcm"
         ></a-entity>
       </a-entity>
 
